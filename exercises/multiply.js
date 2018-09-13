@@ -10,6 +10,41 @@
 
 // Your code :
 
+function multiply (a, b)
+{   
+    let somme = 0;
+    if (a ==0 || b ==0)
+    {
+        return (0);
+
+    } else  if (a >b && a >0 )
+        {
+
+            for (let i=0 ; i < a; i++) {
+            
+                somme = somme + b
+
+        } }  else  if (b >a &&  b >0)
+            {
+    
+                for (let i=0 ; i < b; i++) {
+
+                somme = somme + a
+
+            } } else if (a< 0 && b<0)
+            {   a = -a 
+                b = -b
+    
+                for (let i=0 ; i < b; i++) {
+
+                somme = somme + a
+            } }
+
+        return somme;    
+
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 
