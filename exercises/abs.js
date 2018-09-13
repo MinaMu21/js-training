@@ -13,7 +13,13 @@
 
 function abs(x)
 {
-    return x > -x && x || -x;
+    if (x < 0)
+    {
+        return (- x);
+    } else {
+        return (x);
+    }
+    
 }
 
 //* Begin of tests
