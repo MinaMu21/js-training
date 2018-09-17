@@ -10,10 +10,16 @@
  *
  */
 
-
+ function jadenCase(str){
+    return str.split(" ").map(function(mot) {
+        return mot.charAt(0).toUpperCase() +mot.slice(1).toLowerCase();
+  }).join(" ");
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
+assert.strictEqual(jadenCase("bonjour agnes comment tu vas?"), "Bonjour Agnes Comment Tu Vas?") 
+
 // End of tests */
